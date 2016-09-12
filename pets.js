@@ -17,7 +17,7 @@ if(cmd === 'read'){
     var pets = JSON.parse(data)
     var index = process.argv[3]
 
-    if(index > pets.length - 1 || index < 0){
+    if(index >= pets.length || index < 0){
       console.error(`Usage: ${node} ${file} ${cmd} INDEX`)
       process.exit(1)
     }
