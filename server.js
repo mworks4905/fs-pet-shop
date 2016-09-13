@@ -6,7 +6,7 @@ var petsPath = path.join(__dirname, 'pets.json')
 
 var express = require('express')
 var app = express()
-var port = 8000
+var port = process.env.PORT || 8000
 
 var bodyParser = require('body-parser')
 var morgan = require('morgan')
